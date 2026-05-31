@@ -1,5 +1,5 @@
 import { Injectable, signal } from '@angular/core';
-import { Event } from '../../shared/models/event.model';
+import { Event } from '../../../shared/models/event.model';
 
 @Injectable({ providedIn: 'root' })
 export class EventsService {

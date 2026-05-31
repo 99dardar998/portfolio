@@ -1,0 +1,7 @@
+// ─── Entry point ─────────────────────────────────────────────────────────────
+// Import order matters: variables first, then reset, then utilities.
+// Component styles are loaded separately by Angular's component style encapsulation.
+
+@use 'variables';   // CSS custom properties defined on :root
+@use 'reset';       // Modern CSS reset
+@use 'utilities';   // Global layout helpers, buttons, shared page structures

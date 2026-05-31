@@ -1,8 +1,8 @@
 import { Component, inject, signal, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { EventsService } from '../../../core/services/events.service';
-import { Event } from '../../../shared/models/event.model';
-import { TagChipComponent } from '../../../shared/components/tag-chip/tag-chip.component';
+import {Event} from '../../../../shared/models/event.model'
+import { TagChipComponent } from '../../../../shared/components/tag-chip/tag-chip.component';
 
 @Component({
   selector: 'app-event-detail',

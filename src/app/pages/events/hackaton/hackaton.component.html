@@ -1,0 +1,145 @@
+<div class="page-hero">
+  <div class="container">
+    <a routerLink="/events" class="back-link">← Back to Events</a>
+    <div class="event-meta-header">
+      <span class="event-type-badge">Hackathon</span>
+      <span class="event-date-badge">2024</span>
+    </div>
+    <h1>Hackathon 2024</h1>
+    <p class="event-location">📍 PXL University of Applied Sciences, Hasselt</p>
+    <div class="event-tags">
+      @for (tech of technologies; track tech) {
+        <app-tag-chip [label]="tech" />
+      }
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  <div class="container container--narrow">
+
+    <div class="event-section">
+      <h2>Overview</h2>
+      <p>
+        The PXL Hackathon 2024 was a 24-hour intensive programming competition organized by the Applied Computer Science department. Teams of four students were given a challenge at the start of the event and had exactly 24 hours to design, build, and present a working prototype. Our team – four third-year software engineering students – entered with a strategy: keep the scope tight, execute cleanly, and present with confidence. The event brought together students from multiple year groups and disciplines, creating a genuinely competitive atmosphere that pushed everyone to perform at their best.
+      </p>
+      <p>
+        The format was designed to mirror real-world product development under pressure: an initial briefing, a self-directed building phase with no external help, and a final demo to a panel of industry judges. Points were awarded for technical implementation, innovation, presentation quality, and potential real-world impact. Our final result was a working fullstack web application that addressed the given challenge, deployed locally and demonstrated live to the judging panel.
+      </p>
+    </div>
+
+    <div class="event-section">
+      <h2>Team</h2>
+      <div class="team-grid">
+        @for (member of teamMembers; track member.name) {
+          <div class="team-card">
+            <div class="team-card__avatar">{{ member.name.charAt(0) }}</div>
+            <div class="team-card__info">
+              <span class="team-card__name">{{ member.name }}</span>
+              <span class="team-card__role">{{ member.role }}</span>
+            </div>
+          </div>
+        }
+      </div>
+      <p>
+        We divided responsibilities based on individual strengths while keeping communication constant throughout the 24 hours. I handled the Angular frontend architecture and overall system design decisions. Regular sync-ups every two hours ensured we stayed aligned and caught integration issues early rather than at the end.
+      </p>
+    </div>
+
+    <div class="event-section">
+      <h2>The Challenge</h2>
+      <p>
+        The challenge brief was revealed at the start of the event. Teams were asked to build a digital platform that would address a specific real-world problem in the area of sustainability and community engagement. The problem statement was intentionally broad: the expectation was that teams would define their own scope within the theme and justify their decisions to the judges. This added an interesting design-thinking dimension to the challenge – we weren't just building software, we were making product decisions under time pressure.
+      </p>
+      <p>
+        After a 30-minute team brainstorm, we settled on a focused solution: a community platform for tracking and sharing local sustainability initiatives. The core idea was simple enough to build in 24 hours but meaningful enough to make a compelling presentation. We wrote a one-page scope document before touching any code, which proved invaluable in keeping us aligned throughout the night.
+      </p>
+    </div>
+
+    <div class="event-section">
+      <h2>Our Solution</h2>
+      <p>
+        We built a fullstack web application called <strong>GreenMap</strong> – a community sustainability dashboard. The application allowed users to register local green initiatives (tree plantings, clean-up events, community gardens), view them on a filterable list, and track participation metrics. The MVP we delivered included user registration and authentication, initiative creation and management, a filterable overview with category tags, and a simple statistics dashboard showing aggregate impact numbers.
+      </p>
+      <p>
+        The frontend was built with Angular 17, using standalone components throughout. State was managed with Angular Signals, which allowed reactive data flow without the complexity of RxJS for this scale of application. The backend was a Spring Boot REST API with MongoDB as the datastore – chosen for its schema flexibility, which suited a hackathon pace where the data model was evolving in real time. Docker Compose handled our local deployment, which meant the demo worked cleanly without any "works on my machine" issues.
+      </p>
+    </div>
+
+    <div class="event-section">
+      <h2>Technologies Used</h2>
+      <div class="tech-list">
+        @for (tech of technologies; track tech) {
+          <div class="tech-item">
+            <span class="tech-bullet">▸</span>
+            <span class="tech-name">{{ tech }}</span>
+          </div>
+        }
+      </div>
+    </div>
+
+    <div class="event-section">
+      <h2>Obstacles</h2>
+      <p>
+        The first major obstacle came at hour 4: a CORS configuration issue between the Angular frontend and the Spring Boot backend caused all API requests to fail. We lost nearly 45 minutes diagnosing and resolving it – time we couldn't afford. The lesson was immediate and lasting: always configure CORS correctly from the very start of any fullstack project, not as an afterthought when integration begins.
+      </p>
+      <p>
+        Around hour 14 – deep into the night – team energy flagged noticeably. We had hit a wall with the authentication implementation, which was more complex than anticipated. We made a deliberate decision to simplify: instead of implementing full JWT authentication with refresh tokens as originally planned, we switched to a session-based approach using Spring Security's defaults. It was the right call. Shipping a working, simplified feature beats a broken, ambitious one every time.
+      </p>
+      <p>
+        The final obstacle was time management during the presentation preparation phase. We underestimated how long it would take to clean up the UI and prepare a coherent demo narrative. In the last two hours, we prioritized ruthlessly: fixed the three most visible UI bugs, prepared a clear demo script, and left the rest. The presentation was strong because we knew exactly what we were showing and why.
+      </p>
+    </div>
+
+    <div class="event-section">
+      <h2>Lessons Learned</h2>
+      <p>
+        The hackathon compressed about six months of learning into 24 hours. The most important lesson was about scope discipline: the teams that overreached with complex feature sets consistently delivered less impressive results than teams who picked a focused problem and executed it well. Simplicity under pressure is a skill, and one that transfers directly to professional software development.
+      </p>
+      <p>
+        I also learned a great deal about my own working patterns under stress. I tend toward over-engineering when anxious – reaching for elegant solutions when pragmatic ones would do. The hackathon forced me to override that instinct repeatedly, and doing so successfully built a kind of mental muscle memory for making fast, good-enough decisions.
+      </p>
+      <p>
+        Team communication was the other major lesson. The teams we observed who seemed to struggle most were often dealing with coordination failures, not technical ones. Our two-hour sync cadence was a simple mechanism that prevented most of those problems before they started.
+      </p>
+    </div>
+
+    <div class="event-section">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        @for (item of galleryItems; track item) {
+          <div class="gallery-placeholder">
+            <span class="gallery-icon">🖼️</span>
+            <span>{{ item }}</span>
+          </div>
+        }
+      </div>
+    </div>
+
+    <div class="event-section">
+      <h2>Results</h2>
+      <div class="results-card">
+        <div class="result-item">
+          <span class="result-label">Position</span>
+          <span class="result-value">Top 3 Finalist</span>
+        </div>
+        <div class="result-item">
+          <span class="result-label">Duration</span>
+          <span class="result-value">24 Hours</span>
+        </div>
+        <div class="result-item">
+          <span class="result-label">Team Size</span>
+          <span class="result-value">4 Members</span>
+        </div>
+        <div class="result-item">
+          <span class="result-label">Deliverable</span>
+          <span class="result-value">Live Demo</span>
+        </div>
+      </div>
+      <p>
+        Our team finished as a top 3 finalist. The judges recognized the clean implementation, the well-reasoned scope decisions, and the clarity of the presentation. More than the result, the event confirmed that I can perform effectively under genuine pressure – and that's worth more than any placement.
+      </p>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,49 @@
+// ─── Typography ──────────────────────────────────────────────────────────────
+$font-display: 'Syne', sans-serif;
+$font-body:    'DM Sans', sans-serif;
+$font-mono:    'DM Mono', monospace;
+
+// ─── Breakpoints ─────────────────────────────────────────────────────────────
+$bp-sm:  480px;
+$bp-md:  768px;
+$bp-lg:  900px;
+$bp-xl:  1200px;
+
+// ─── CSS Custom Properties (dark theme – default) ────────────────────────────
+:root {
+  // Fonts
+  --font-display: #{$font-display};
+  --font-body:    #{$font-body};
+  --font-mono:    #{$font-mono};
+
+  // Background & surfaces
+  --bg:          #0a0a0f;
+  --bg-rgb:      10, 10, 15;
+  --surface:     #111118;
+  --surface-alt: #16161f;
+
+  // Text
+  --text-primary:   #f0f0f8;
+  --text-secondary: #9191aa;
+  --text-muted:     #55556a;
+
+  // Accent — electric indigo
+  --accent:        #7c6ff7;
+  --accent-rgb:    124, 111, 247;
+  --accent-muted:  rgba(124, 111, 247, 0.1);
+  --accent-border: rgba(124, 111, 247, 0.25);
+
+  // Borders
+  --border: rgba(255, 255, 255, 0.07);
+
+  // Shadows
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.5);
+  --shadow-lg: 0 24px 64px rgba(0,0,0,0.6);
+
+  // Radii
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+}

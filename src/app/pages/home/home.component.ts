@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { SkillsService } from '../../core/services/skills.service';
-import { TagChipComponent } from '../../shared/components/tag-chip/tag-chip.component';
+import { SkillsService } from '../../core/services/skill.service';
+import { TagChipComponent } from '../../../shared/components/tag-chip/tag-chip.component';
 
 @Component({
   selector: 'app-home',

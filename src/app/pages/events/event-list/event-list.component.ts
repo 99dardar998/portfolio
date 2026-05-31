@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { EventsService } from '../../../core/services/events.service';
-import { TagChipComponent } from '../../../shared/components/tag-chip/tag-chip.component';
+import { TagChipComponent } from '../../../../shared/components/tag-chip/tag-chip.component';
 
 @Component({
   selector: 'app-event-list',

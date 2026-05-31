@@ -1,0 +1,115 @@
+.tech-stack-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.website-creation-layout {
+  padding: 4rem 0 6rem;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Sticky table of contents */
+.toc {
+  position: sticky;
+  top: 100px;
+
+  &__label {
+	display: block;
+	font-family: var(--font-mono);
+	font-size: 0.68rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: var(--text-muted);
+	margin-bottom: 0.85rem;
+  }
+
+  nav {
+	display: flex;
+	flex-direction: column;
+	gap: 0.1rem;
+  }
+
+  &__link {
+	display: block;
+	padding: 0.35rem 0.65rem;
+	font-size: 0.825rem;
+	color: var(--text-secondary);
+	text-decoration: none;
+	border-left: 2px solid transparent;
+	transition: color 0.15s, border-color 0.15s;
+	border-radius: 0 4px 4px 0;
+
+	&:hover {
+	  color: var(--accent);
+	  border-left-color: var(--accent);
+	  background: var(--accent-muted);
+	}
+  }
+}
+
+/* Main article sections */
+.creation-section {
+  margin-bottom: 3.5rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: 100px;
+
+  &:last-child { border-bottom: none; }
+
+  h2 {
+	font-family: var(--font-display);
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: var(--text-primary);
+	letter-spacing: -0.02em;
+	margin-bottom: 1.25rem;
+  }
+
+  p {
+	font-size: 0.95rem;
+	color: var(--text-secondary);
+	line-height: 1.8;
+	margin-bottom: 1.1rem;
+
+	&:last-child { margin-bottom: 0; }
+  }
+}
+
+@media (max-width: 900px) {
+  .two-col {
+	grid-template-columns: 1fr;
+	gap: 2rem;
+  }
+
+  .toc {
+	position: static;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius-lg);
+	padding: 1.25rem;
+
+	nav {
+	  flex-direction: row;
+	  flex-wrap: wrap;
+	  gap: 0.25rem;
+	}
+
+	&__link {
+	  border-left: none;
+	  border-radius: 6px;
+	  border: 1px solid var(--border);
+	  padding: 0.3rem 0.65rem;
+	  font-size: 0.78rem;
+
+	  &:hover { border-color: var(--accent); }
+	}
+  }
+}

@@ -1,0 +1,42 @@
+<div class="page-hero">
+  <div class="container">
+    <span class="page-label">Meta</span>
+    <h1>How I Built This Website</h1>
+    <p>The decisions, trade-offs, and lessons behind this Angular e-portfolio.</p>
+    <div class="tech-stack-chips">
+      @for (tech of techStack; track tech) {
+        <app-tag-chip [label]="tech" />
+      }
+    </div>
+  </div>
+</div>
+
+<div class="website-creation-layout">
+  <div class="container">
+    <div class="two-col">
+
+      <!-- Sticky sidebar TOC -->
+      <aside class="toc">
+        <span class="toc__label">On this page</span>
+        <nav>
+          @for (section of sections; track section.id) {
+            <a [href]="'#' + section.id" class="toc__link">{{ section.title }}</a>
+          }
+        </nav>
+      </aside>
+
+      <!-- Main content -->
+      <main class="creation-content">
+        @for (section of sections; track section.id) {
+          <div class="creation-section" [id]="section.id">
+            <h2>{{ section.title }}</h2>
+            @for (paragraph of section.content; track paragraph) {
+              <p>{{ paragraph }}</p>
+            }
+          </div>
+        }
+      </main>
+
+    </div>
+  </div>
+</div>

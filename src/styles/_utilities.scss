@@ -1,0 +1,192 @@
+// ─── Container ───────────────────────────────────────────────────────────────
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  &--narrow {
+	max-width: 760px;
+  }
+}
+
+// ─── Buttons ─────────────────────────────────────────────────────────────────
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s, transform 0.15s, border-color 0.15s;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:active { transform: scale(0.97); }
+
+  &--primary {
+	background: var(--accent);
+	color: #fff;
+	border: 1px solid var(--accent);
+
+	&:hover {
+	  background: lighten(#7c6ff7, 6%);
+	  box-shadow: 0 4px 16px rgba(124, 111, 247, 0.35);
+	}
+  }
+
+  &--ghost {
+	background: transparent;
+	color: var(--text-secondary);
+	border: 1px solid var(--border);
+
+	&:hover {
+	  color: var(--text-primary);
+	  border-color: var(--text-secondary);
+	  background: var(--surface);
+	}
+  }
+
+  &--icon {
+	padding: 0.6rem;
+	aspect-ratio: 1;
+	justify-content: center;
+  }
+}
+
+// ─── Page Hero (shared across all pages) ─────────────────────────────────────
+.page-hero {
+  padding: 9rem 0 3.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
+
+  .container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+  }
+
+  .page-label {
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	color: var(--accent);
+  }
+
+  h1 {
+	font-family: var(--font-display);
+	font-size: clamp(2rem, 5vw, 3.25rem);
+	font-weight: 800;
+	letter-spacing: -0.03em;
+	color: var(--text-primary);
+	line-height: 1.1;
+  }
+
+  p {
+	font-size: 1rem;
+	color: var(--text-secondary);
+	max-width: 580px;
+	line-height: 1.65;
+  }
+}
+
+// ─── Back link ───────────────────────────────────────────────────────────────
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+  margin-bottom: 0.5rem;
+
+  &:hover { color: var(--accent); }
+}
+
+// ─── Article prose content ───────────────────────────────────────────────────
+.article-content {
+  padding: 4rem 0 6rem;
+}
+
+.article-body {
+  h2 {
+	font-family: var(--font-display);
+	font-size: 1.35rem;
+	font-weight: 700;
+	color: var(--text-primary);
+	letter-spacing: -0.02em;
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
+
+	&:first-child { margin-top: 0; }
+  }
+
+  p {
+	font-size: 0.95rem;
+	color: var(--text-secondary);
+	line-height: 1.8;
+	margin-bottom: 1.25rem;
+
+	&:last-child { margin-bottom: 0; }
+  }
+
+  .lead {
+	font-size: 1.05rem;
+	color: var(--text-primary);
+	line-height: 1.7;
+	margin-bottom: 2.5rem;
+	padding-bottom: 2.5rem;
+	border-bottom: 1px solid var(--border);
+	font-weight: 400;
+  }
+}
+
+// Lead paragraph (used directly without .article-body wrapper)
+.lead {
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+// ─── Selection ───────────────────────────────────────────────────────────────
+::selection {
+  background: var(--accent-muted);
+  color: var(--accent);
+}
+
+// ─── Scrollbar ───────────────────────────────────────────────────────────────
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb {
+  background: var(--surface-alt);
+  border-radius: 100px;
+
+  &:hover { background: var(--text-muted); }
+}
+
+// ─── View transitions ────────────────────────────────────────────────────────
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+::view-transition-old(root) {
+  animation: 200ms ease-out fade-out;
+}
+
+::view-transition-new(root) {
+  animation: 250ms ease-in fade-in;
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
