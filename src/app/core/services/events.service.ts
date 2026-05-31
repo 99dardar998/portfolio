@@ -7,142 +7,130 @@ export class EventsService {
     {
       id: 'tech-meet-1',
       title: 'Tech & Meet 1',
-      date: 'October 2023',
-      location: 'PXL University of Applied Sciences, Hasselt',
+      date: '2025',
+      location: 'Howest, Campus Brugge Station - Gebouw A, Spoorwegstraat 4, 8200 Brugge',
       type: 'tech-meet',
-      shortDescription: 'Our first Tech & Meet session – an introduction to the professional world of software engineering through guest speakers and networking.',
-      overview: `The first Tech & Meet event of the academic year kicked off a tradition that would become one of the most valuable recurring experiences of my studies. Organized by PXL University of Applied Sciences, this evening brought together students from the Applied Computer Science program and a curated selection of professionals from the local tech industry. The format was designed to bridge the gap between academic education and real-world software development practice. Held in the main auditorium, the event opened with a welcome presentation from faculty, followed by two keynote talks from industry professionals, and concluded with an extended networking session.
+      shortDescription: 'A cybersecurity-focused seminar on threat intelligence — an unexpected but eye-opening first Tech & Meet.',
+      overview: `The first Tech & Meet I attended was a rather unusual choice for a Software Engineering student. It was not completely unrelated to my field of study, but it certainly was not the type of seminar most people would expect me to choose. The event was an evening seminar focused on threat intelligence and the process of gathering information about cybersecurity threats and turning that information into actionable intelligence.`,
+      whatHappened: `At the time, I had very little prior knowledge of the subject. Despite this, I was able to follow the presentation quite easily thanks to the speaker's clear explanations and well-structured approach. The seminar was designed in a way that made complex concepts accessible, allowing younger students and those with little experience in cybersecurity, like myself, to understand the material without feeling overwhelmed.
 
-The turnout was impressive – nearly all third-year students attended alongside colleagues from other years, creating an intergenerational mix of perspectives. For many of us, this was the first time we had the opportunity to engage directly with working software engineers in a semi-formal context. The atmosphere was energizing: people were genuinely curious, questions flew freely, and the conversations that started in the auditorium carried on long after the official program ended.`,
-      whatHappened: `The evening opened with a brief welcome from the department head, who set the context for the Tech & Meet series: a recurring event series designed to give students direct exposure to the realities of the tech industry, beyond what any textbook can offer. The first speaker was a senior backend developer from a Hasselt-based fintech company. He walked us through the evolution of their architecture – from a monolithic Java Spring Boot application to a microservices ecosystem deployed on Kubernetes. He was candid about the growing pains: "The rewrite took 18 months and nearly broke the team," he admitted, before explaining how they eventually landed on a pragmatic hybrid approach.
+One of the most valuable aspects of the seminar was learning how many cyberattacks still occur and which weaknesses are commonly exploited by malicious actors. The presentation also covered the detection and investigation of security incidents — how attacks can be identified and traced back to their source.`,
+      whatILearned: `As a programmer, understanding these vulnerabilities is useful because it allows me to design software with security in mind. The seminar highlighted how developers can make use of existing security tools, frameworks, and best practices to create safer applications and reduce the risk of attacks.
 
-The second speaker was a DevOps engineer who had transitioned from a developer background. Her talk focused on CI/CD pipelines, infrastructure as code, and how Docker and GitHub Actions transformed the way her team shipped software. She live-demonstrated a deployment pipeline, which was genuinely exciting for students who had only read about these concepts in course material. The networking session that followed was lively. Tables were set up with name tags and QR codes linking to company LinkedIn pages. I spoke with three engineers that evening – asking about their daily workflow, how they learned on the job, and what they wished they had known as students.`,
-      whatILearned: `The most impactful insight from Tech & Meet 1 was the realization that real-world software engineering is defined far more by communication, iteration, and pragmatic decision-making than by raw technical prowess alone. The senior backend developer's story about the architectural rewrite stuck with me: technical decisions carry human costs, and the best engineers are the ones who can balance ideal solutions with practical constraints.
+Although I do not see myself pursuing a career in cybersecurity, knowing how attacks can be identified and traced can still be beneficial. This knowledge may prove useful in personal projects or community-based applications where preventing abuse and protecting users are important concerns. Even a basic understanding of security can go a long way toward maintaining reliable and trustworthy software.`,
+      reflection: `Although I enjoyed the content, I personally would not choose this particular seminar again if given the opportunity. This is not because the topic lacked value or because the speaker was unenthusiastic — on the contrary, the presentation was engaging and informative throughout. However, the long commute to and from campus, combined with having to skip dinner in order to arrive on time, made the overall experience less worthwhile for me than some of the later Tech & Meet events I attended.
 
-On a more technical level, I gained a clearer understanding of the operational side of software – the part that doesn't often get covered deeply in coursework. The DevOps presentation made CI/CD feel tangible for the first time. I had set up basic GitHub Actions pipelines in personal projects, but seeing a production pipeline with environment-specific configurations, automated testing gates, and rollback strategies showed me the scale and sophistication of real deployments.
-
-I also came away with a better understanding of how to position myself as a student when talking to professionals. Being curious and prepared matters more than pretending to know everything. The engineers I spoke with responded most warmly to specific, genuine questions.`,
-      reflection: `Tech & Meet 1 was a turning point in how I think about my own development as a software engineer. Before the event, I had a somewhat narrow view of what the job actually looked like – heavy on coding, lighter on everything else. The event disrupted that assumption and replaced it with a more nuanced picture: one where architecture decisions, team dynamics, DevOps culture, and continuous learning are just as central to the role as writing good code.
-
-What surprised me most was how open the speakers were about failure and uncertainty. Both of them talked about projects that hadn't gone as planned, decisions they'd revisit, and gaps in their own knowledge. This honesty was more motivating than any polished success story would have been. It made the industry feel approachable – populated by people who are continually learning, not just experts who have it all figured out.
-
-Going forward, I want to be more intentional about following up after events like this. I exchanged contact information with one of the engineers I met, but I haven't followed up meaningfully yet. That's something I want to change.`,
+That being said, this first seminar served as an excellent introduction to the Tech & Meet series. It helped me understand what to expect from future events and prepared me for the seminars that followed, many of which aligned more closely with my personal interests and academic background.`,
       keyTakeaways: [
-        'Real-world engineering is as much about communication as code',
-        'Architecture decisions have lasting human and organizational costs',
-        'CI/CD pipelines are essential knowledge for modern developers',
-        'Networking with honesty and curiosity builds better connections',
-        'Failure and iteration are normal parts of professional development'
+        'Threat intelligence turns raw security data into actionable knowledge',
+        'Many cyberattacks exploit well-known, preventable vulnerabilities',
+        'Developers benefit from understanding security even outside a cybersecurity role',
+        'Security-conscious design starts at the code level',
+        'A broad understanding of the tech landscape has value even outside your specialty'
       ],
       gallery: [
-        { alt: 'Keynote presentation Tech & Meet 1', placeholder: 'Auditorium keynote' },
-        { alt: 'Networking session', placeholder: 'Students networking' },
-        { alt: 'DevOps demo', placeholder: 'Live pipeline demo' }
+        { alt: 'Threat intelligence presentation', placeholder: 'Seminar overview slide' },
+        { alt: 'Cybersecurity concepts', placeholder: 'Attack vector diagram' },
+        { alt: 'Evening seminar setting', placeholder: 'Lecture hall' }
       ],
-      tags: ['Networking', 'Architecture', 'DevOps', 'CI/CD']
+      tags: ['Cybersecurity', 'Threat Intelligence', 'Security', 'Networking']
     },
     {
       id: 'tech-meet-2',
       title: 'Tech & Meet 2',
-      date: 'December 2023',
-      location: 'PXL University of Applied Sciences, Hasselt',
+      date: '2025',
+      location: 'Howest, Campus Brugge Station - Gebouw A, Spoorwegstraat 4, 8200 Brugge',
       type: 'tech-meet',
-      shortDescription: 'Frontend-focused edition with deep dives into Angular, modern UI architecture, and accessibility in production applications.',
-      overview: `The second edition of Tech & Meet arrived at the end of the first semester, timed perfectly to complement coursework we had been doing in web development. This iteration had a deliberate focus on frontend technologies and modern web architecture, which made it particularly relevant to my ongoing Angular projects. The organizing committee had clearly listened to student feedback from the first event and added more interactive components: a brief live coding segment, a panel Q&A, and a "speed networking" round where students rotated between tables of professionals every ten minutes.
+      shortDescription: 'An IPv6 seminar with a twist — the speaker kept the audience engaged with fun facts about Bruges and alcohol.',
+      overview: `One of the Tech & Meet events that I remember most clearly was a seminar that took a surprisingly creative approach to keeping its audience engaged. What made this particular session stand out was how the speaker combined a serious technical topic with entertaining facts about two subjects that many students, including myself, found interesting: the city of Bruges and the history of alcohol.`,
+      whatHappened: `Throughout the presentation, the speaker regularly interrupted the more technical sections with short stories, fun facts, and humorous anecdotes. These moments acted as a way to recapture the audience's attention whenever concentration began to fade. While the comparison may sound funny, it felt somewhat like waving a shiny object in front of someone to regain their focus. Surprisingly, it worked extremely well.
 
-The venue remained the same – PXL's auditorium and adjacent networking hall – but the energy felt different this time. Students came in more prepared, with questions thought out in advance. There was a sense of continuity, of being part of an ongoing conversation between the academic and professional worlds. Two speakers presented, both with frontend-heavy backgrounds, and the panel discussion at the end brought in a product manager who offered a complementary perspective on how design, development, and business needs intersect.`,
-      whatHappened: `The first speaker, a senior Angular developer from a Belgian digital agency, opened with a question that instantly grabbed the room's attention: "How many of you are building SPAs without thinking about what happens after the JavaScript fails to load?" He proceeded to walk us through the concept of progressive enhancement and resilient frontend architecture – a perspective that cut against the grain of the "Angular-first, everything-else-second" approach many of us had internalized.
+The seminar took place late in the evening after a full day of classes, which naturally made it more difficult to remain fully concentrated for an extended period of time. The speaker clearly recognized this challenge and adapted his presentation style accordingly, making the entire experience much more enjoyable.
 
-His deep dive into Angular's component architecture, lazy loading, and the new Signals API was particularly valuable. He demonstrated how replacing complex RxJS chains with signals reduced component complexity by roughly 40% in one of his recent projects, and he showed side-by-side code comparisons that made the benefit immediately clear. The second speaker shifted to accessibility – a topic that I, somewhat shamefully, had not thought deeply about before. She made the case that accessibility is not a feature but a fundamental quality attribute, and she walked through real examples of how poor ARIA labeling, missing keyboard navigation, and low color contrast actively exclude users. The speed networking round was my favorite part of this edition.`,
-      whatILearned: `Tech & Meet 2 fundamentally changed how I approach frontend development. The talk on Angular Signals was technically illuminating – I had read the documentation but seeing the practical before/after comparison of reactive code showed me the real value. I've since started incorporating signals into my own Angular projects, and the reduction in boilerplate is noticeable. More importantly, it's made my components easier to reason about.
+Beyond the entertaining elements, the technical topic itself was highly relevant. The seminar focused on IPv6 and the ongoing transition from IPv4 to IPv6 across the internet. We learned about the limitations of IPv4, particularly the shortage of available addresses, and how IPv6 was designed to solve this problem by providing a vastly larger address space.`,
+      whatILearned: `The presentation covered additional advantages of IPv6, including improvements in network efficiency, scalability, and future-proofing internet infrastructure. Another interesting aspect was the discussion about why some organizations and developers have been slow to adopt IPv6 — many existing systems were originally built around IPv4, and updating infrastructure, software, and network configurations can require significant time and resources.
 
-The accessibility session left a deep impression. I had always viewed accessibility as a "nice to have" that you'd add time permitting, but the speaker reframed it as a correctness issue. If your application doesn't work with a keyboard, it's broken for a significant portion of users. I've since started testing my own work with keyboard-only navigation and using browser accessibility audit tools as a standard part of my review process.
+As a software engineering student, I found this information particularly valuable because networking concepts are an important part of modern software development. Understanding the challenges involved in adopting new technologies helped me appreciate the practical considerations that influence technical decisions in the industry.`,
+      reflection: `Overall, this Tech & Meet became one of my favorites. The combination of a relevant technical subject, an engaging speaker, and a unique presentation style created a memorable experience. It demonstrated that even highly technical topics can be made entertaining when presented with creativity and enthusiasm.
 
-The panel discussion gave me insight into the product management perspective: how feature requests get prioritized, how technical debt is communicated to non-technical stakeholders, and how frontend developers can be more effective advocates for quality within a product team.`,
-      reflection: `If Tech & Meet 1 broadened my perspective on software engineering as a profession, Tech & Meet 2 sharpened my focus on the craft of frontend development specifically. I came away with a list of concrete technical things to explore – Angular Signals, accessibility auditing tools, progressive enhancement patterns – and I've been working through that list ever since.
-
-The speed networking format was stressful at first but turned out to be highly effective. The imposed time limit meant every conversation had to get to the point quickly, which actually made for more substantive exchanges. I practiced explaining my projects clearly and concisely, which is a skill I know I need for future job interviews. I left Tech & Meet 2 feeling more confident in my direction as a developer – solidly frontend-focused with a growing appreciation for the operational and accessibility dimensions of the role.`,
+I am not ashamed to admit that the technique of mixing fun facts with technical content definitely helped keep me engaged. It is a lesson in communication I have thought about since: knowing your audience and adapting your delivery style is just as important as the content itself.`,
       keyTakeaways: [
-        'Angular Signals dramatically simplify reactive state management',
-        'Accessibility is a correctness concern, not a bonus feature',
-        'Progressive enhancement makes SPAs more resilient',
-        'Product thinking complements technical depth in frontend roles',
-        'Speed networking sharpens communication under pressure'
+        'IPv6 solves the IPv4 address exhaustion problem with a vastly larger address space',
+        'Many organizations run IPv4 and IPv6 simultaneously during the transition',
+        'Presentation style and audience awareness matter as much as technical content',
+        'Networking knowledge is relevant for every software developer',
+        'Creative delivery can make even complex technical topics accessible and memorable'
       ],
       gallery: [
-        { alt: 'Angular Signals live demo', placeholder: 'Code demo on screen' },
-        { alt: 'Accessibility presentation', placeholder: 'Accessibility talk' },
-        { alt: 'Speed networking tables', placeholder: 'Rotating networking' }
+        { alt: 'IPv6 address space diagram', placeholder: 'Network diagram slide' },
+        { alt: 'IPv4 vs IPv6 comparison', placeholder: 'Protocol comparison' },
+        { alt: 'Seminar audience', placeholder: 'Evening seminar' }
       ],
-      tags: ['Angular', 'Signals', 'Accessibility', 'Frontend']
+      tags: ['IPv6', 'Networking', 'Internet Infrastructure', 'Protocols']
     },
     {
       id: 'tech-meet-3',
       title: 'Tech & Meet 3',
-      date: 'March 2024',
-      location: 'PXL University of Applied Sciences, Hasselt',
+      date: '2025',
+      location: 'Howest, Campus Brugge Station - Gebouw A, Spoorwegstraat 4, 8200 Brugge',
       type: 'tech-meet',
-      shortDescription: 'Backend and database-focused edition covering Spring Boot microservices, MongoDB, and API design best practices.',
-      overview: `The third Tech & Meet of the academic year arrived in the spring semester with a backend-heavy lineup that complemented the Java and database coursework we were deep in at the time. This edition drew a slightly larger crowd than the previous two, partly due to word spreading about the quality of the series, and partly because the topic – microservices and NoSQL databases – had become a hot discussion point in our courses. The format had by now matured into a familiar and comfortable rhythm: two main presentations, a networking break, a panel or Q&A, and a casual wind-down.
+      shortDescription: 'A deep dive into the evolution of C# and the .NET ecosystem — insightful even as a Java-first developer.',
+      overview: `The second-to-last Tech & Meet I attended focused on the recent advancements and changes introduced in the .NET ecosystem for programmers working with languages in this category. The main emphasis of the seminar was on C# and how the language has evolved over time through continuous updates and improvements.`,
+      whatHappened: `The speaker of the seminar was highly knowledgeable and clearly very experienced in the .NET ecosystem. This level of expertise made a noticeable difference, as the explanations were both technically accurate and easy to understand. During the session, we were introduced to several new language features and design changes in C#, along with the reasoning behind why those changes were implemented.
 
-What made this edition distinctive was the level of technical depth. The speakers clearly anticipated a more knowledgeable audience than at the first event and calibrated their presentations accordingly. There was less time spent on basic definitions and more time on design decisions, trade-offs, and hard lessons learned. For students mid-way through their degree, it felt like being treated as near-professionals, which was genuinely motivating.`,
-      whatHappened: `The first speaker was the lead architect of a logistics software company based in Limburg. He walked us through the journey of evolving a Spring Boot monolith into a microservices architecture, focusing specifically on the domain modeling decisions that drove service boundaries. His use of Domain-Driven Design concepts – bounded contexts, aggregates, and event sourcing – was the first time I had heard these ideas explained in a practical, applied context rather than as abstract theory.
+This included improvements aimed at making code more readable, more efficient, and easier to maintain. We also discussed smaller internal changes and fixes that improve how the language behaves under the hood — changes that are not always visible in everyday coding but still have a significant impact on the developer experience and application stability.`,
+      whatILearned: `At the time, my preferred programming language for object-oriented programming was Java, and it still remains my primary choice. However, the Tech & Meet still provided valuable insights into how programming languages evolve in general. Languages like C# and Java are not static — they are continuously updated with new features, performance improvements, and syntactic changes.
 
-He spent considerable time on Spring Boot's ecosystem: Spring Data, Spring Security, and the patterns for inter-service communication. One of his most memorable lines: "The hardest part of microservices isn't the technology. It's deciding where one service ends and another begins." The second speaker was a database specialist who had worked with both relational and document-oriented databases across several companies. Her MongoDB-focused presentation covered schema design, indexing strategies, aggregation pipelines, and when to choose document storage over relational – a question I'd been wrestling with in my own projects. She also touched on MongoDB Atlas and cloud-native database patterns.`,
-      whatILearned: `Tech & Meet 3 clarified a lot of things I had been fuzzy on. Domain-Driven Design had appeared in reading materials before, but seeing it applied to actual service boundary decisions gave it meaning. The idea of using bounded contexts to define microservice scope is something I now apply when thinking about system design problems.
+The overlap between C# and Java in terms of structure and programming paradigms made it easier to follow and compare. Having a speaker closely connected to the technology being discussed meant he could translate complex updates into explanations even less experienced students could grasp, while still providing depth for more advanced listeners. This helped me reflect on how similar improvements might appear in Java and other languages I use.`,
+      reflection: `Overall, it was a very insightful and educational Tech & Meet that improved my understanding of how modern programming languages evolve and how those changes affect real-world software development.
 
-On the database side, the MongoDB talk was practically useful. I had been using MongoDB in projects but without a strong understanding of schema design trade-offs. The presentation on embedding versus referencing documents, and the performance implications of each choice, gave me a mental model I can apply going forward. I also learned about aggregation pipelines in more depth than our coursework covered, and I've since used them more confidently. The event reinforced that my backend knowledge – while growing – still has significant gaps. I left with a reading list and a clearer sense of what senior-level backend expertise looks like.`,
-      reflection: `Tech & Meet 3 was probably the most technically dense of the series so far, and I appreciated that. It felt like a preview of the kind of conversations I'll be part of professionally. The DDD content in particular was a catalyst: I went home and spent the next weekend reading about bounded contexts and aggregate design, and I could feel my mental model of software architecture upgrading.
-
-There was a moment during the Q&A when a student asked the architect how he handles disagreements about service boundaries within his team. His answer – that good architecture is always a negotiation, and that documentation and shared understanding matter more than being "right" – stuck with me. It reinforced something I'd heard at earlier events: the relational and communicative aspects of software engineering are not secondary to the technical ones. They're fundamental.`,
+Even though C# was not my main focus language, attending this seminar reinforced something important: understanding the broader landscape of programming languages — even ones you don't use daily — makes you a more well-rounded developer. It also sparked my curiosity about exploring .NET further in future personal projects.`,
       keyTakeaways: [
-        'Domain-Driven Design provides a principled approach to microservice boundaries',
-        'MongoDB schema design requires deliberate thought about access patterns',
-        'Spring Boot ecosystem offers powerful integration for enterprise applications',
-        'Architecture decisions are always negotiations, not unilateral choices',
-        'Good documentation is foundational to maintainable distributed systems'
+        'C# and Java share many structural similarities despite coming from different ecosystems',
+        'Programming languages evolve continuously — staying current matters',
+        'Understanding why language features were added is as valuable as knowing what they do',
+        'A knowledgeable speaker with real-world experience elevates any technical seminar',
+        'Broadening your language knowledge makes you a more adaptable developer'
       ],
       gallery: [
-        { alt: 'Microservices architecture diagram', placeholder: 'Architecture whiteboard' },
-        { alt: 'MongoDB aggregation demo', placeholder: 'Database demo' },
-        { alt: 'Q&A session panel', placeholder: 'Panel discussion' }
+        { alt: 'C# language features overview', placeholder: 'C# feature slide' },
+        { alt: '.NET ecosystem diagram', placeholder: '.NET overview' },
+        { alt: 'Speaker presentation', placeholder: 'Seminar session' }
       ],
-      tags: ['Spring Boot', 'Microservices', 'MongoDB', 'DDD', 'Backend']
+      tags: ['C#', '.NET', 'Programming Languages', 'Software Engineering']
     },
     {
       id: 'tech-meet-4',
       title: 'Tech & Meet 4',
-      date: 'May 2024',
-      location: 'PXL University of Applied Sciences, Hasselt',
+      date: '2025',
+      location: 'Howest, Campus Brugge Station - Gebouw A, Spoorwegstraat 4, 8200 Brugge',
       type: 'tech-meet',
-      shortDescription: 'Year-closing edition focused on cloud infrastructure, Docker, and career paths in software engineering.',
-      overview: `The fourth and final Tech & Meet of the academic year arrived as we were preparing for exams and beginning to think seriously about internships and the next phase of our careers. Fittingly, this edition balanced technical content with more career-oriented discussion, creating a two-track program that addressed both where we were in our learning and where we were heading professionally. The event took on a slightly more celebratory tone – a recognition that we had made it through another year and were increasingly ready for the professional world.
+      shortDescription: 'My favorite Tech & Meet — a passionate talk on DeepSeek and AI by lecturer Dimi Casier.',
+      overview: `The last Tech & Meet event I attended was presented by someone I knew much better than any of the previous speakers. The speaker for this after-school seminar was none other than one of the lecturers who guided me throughout my three-year journey at PXL: Dimi Casier. During my studies, I had the pleasure of attending several of his courses, which made this Tech & Meet feel much more personal and engaging from the very beginning.`,
+      whatHappened: `Just like in his lectures, Dimi delivered the seminar with an incredible amount of enthusiasm and genuine passion for the topic. His energy immediately captured the attention of everyone in the room and made even the more technical aspects easy to follow.
 
-The speakers chosen for this edition reflected that balance: a DevOps-focused cloud engineer discussed the practical infrastructure skills that employers look for, while the second speaker, an engineering manager at a mid-sized software house, shifted focus to career development, team dynamics, and how to present yourself as a junior developer. Together, they created a picture of the complete journey from student to working professional.`,
-      whatHappened: `The cloud engineering talk opened with a visual overview of a typical modern deployment stack: code in GitHub, CI/CD via GitHub Actions, containerized with Docker, orchestrated on Kubernetes, deployed to AWS. He then walked through each layer in sequence, explaining the why behind each technology choice. His Docker segment was the most immediately relevant to me – he showed multi-stage builds, layer caching strategies, and security best practices for containerized applications that I hadn't encountered in coursework.
+The seminar focused on artificial intelligence, specifically DeepSeek — the Chinese AI model that attracted worldwide attention because of its impressive capabilities and relatively low training and operating costs compared to major competitors such as ChatGPT and Microsoft Copilot. The presentation explored why DeepSeek became such an important player in the AI industry despite entering a market already dominated by large technology companies.
 
-The second talk was unlike any previous Tech & Meet presentation. The engineering manager opened with a candid assessment of what most junior developers get wrong in interviews: "You focus on what you've built, but we want to know how you think." He walked through the attributes his team looks for – problem decomposition, communication clarity, intellectual curiosity, and the willingness to say "I don't know, but here's how I'd find out." He also addressed the internship period specifically, offering advice on how to make the most of it and how to turn it into a full-time opportunity. The networking session that followed had a noticeably different energy – students came with resume questions and internship anxiety, and professionals responded with genuine mentorship.`,
-      whatILearned: `Docker clicked for me in a new way at this event. I had used it before – basic Dockerfiles, docker-compose for development environments – but the multi-stage build demonstration and the layer optimization discussion made it clear how much more there was to understand. I've since restructured the Dockerfiles in my projects using multi-stage patterns, and the reduction in image size has been significant.
+One of the main points discussed was the model's innovative approach to reasoning and problem-solving. DeepSeek introduced techniques that allowed it to achieve competitive results while using fewer resources than many of its rivals. Another major factor behind its success was its open-source philosophy, which enabled researchers and developers from around the world to study, improve, and contribute to the project.`,
+      whatILearned: `Throughout the seminar, Dimi explained how these decisions helped DeepSeek establish itself as a serious competitor in the rapidly evolving AI landscape. He also discussed how the model influenced the broader industry, encouraging larger companies to rethink their own development strategies and focus more heavily on efficiency and reasoning capabilities.
 
-The engineering manager's talk on interviewing was practically transformative. I've started practicing problem decomposition out loud, explaining my reasoning as I work through technical challenges rather than presenting only finished solutions. The reframe from "what have you built" to "how do you think" has changed how I present projects – I now try to explain the decisions and trade-offs behind each choice, not just the features.
+What made the seminar particularly interesting was the way Dimi connected technical concepts to real-world developments. Rather than simply presenting facts and figures, he explained why these innovations mattered and how they affected the future direction of AI research. This made the topic much more accessible, even for audience members who were not deeply familiar with machine learning.`,
+      reflection: `This Tech & Meet was not only the last one I attended, but also my favorite. While every speaker I listened to was passionate about their subject, Dimi brought an extra level of excitement that made the experience memorable. His ability to communicate complex topics with enthusiasm and clarity kept everyone engaged from start to finish.
 
-I also internalized something about the internship itself: it's not a test you pass or fail, it's an extended conversation about fit and growth. Approaching it with curiosity and openness matters more than arriving with all the answers.`,
-      reflection: `Tech & Meet 4 felt like a closing chapter and an opening door at the same time. The technical content was strong, but the career-focused thread running through the evening was what made it memorable. I've attended four of these events now, and looking back at the arc – from feeling like an outsider in industry conversations at Tech & Meet 1 to genuinely contributing to technical discussions at Tech & Meet 4 – is a concrete measure of how much I've grown.
-
-The engineering manager's advice about internships landed at exactly the right moment. As I finalize my internship search, I'm approaching it with a different mindset: not as a student trying to prove I belong, but as someone with a foundation of real skills, genuine curiosity, and a clear direction. That shift in confidence is one of the most valuable things this series has given me.`,
+Combined with my personal interest in artificial intelligence, this made the seminar both informative and enjoyable, leaving a lasting impression on me long after it had ended. Although newer AI systems have since appeared and pushed the technology even further, DeepSeek remains an important milestone in the history of modern artificial intelligence.`,
       keyTakeaways: [
-        'Multi-stage Docker builds significantly reduce image size and improve security',
-        'Employers value thinking process and communication over built features',
-        'Kubernetes orchestration is the natural next step after Docker proficiency',
-        'Internships are conversations about fit, not auditions to pass',
-        'The ability to say "I don\'t know, but I\'ll find out" is a professional strength'
+        'DeepSeek achieved competitive AI performance at significantly lower cost than rivals',
+        'Open-source AI development accelerates innovation through global collaboration',
+        'Efficiency and reasoning capabilities are shaping the next generation of AI models',
+        'A familiar and enthusiastic speaker transforms a technical seminar into a genuine experience',
+        'AI is rapidly evolving — staying informed is essential for every software developer'
       ],
       gallery: [
-        { alt: 'Docker multi-stage build demo', placeholder: 'Container demo' },
-        { alt: 'Career talk session', placeholder: 'Engineering manager talk' },
-        { alt: 'Year-end networking', placeholder: 'End of year networking' }
+        { alt: 'DeepSeek model overview', placeholder: 'AI model comparison slide' },
+        { alt: 'Dimi Casier presenting', placeholder: 'Seminar presentation' },
+        { alt: 'AI landscape discussion', placeholder: 'Industry overview' }
       ],
-      tags: ['Docker', 'Kubernetes', 'Cloud', 'Career', 'DevOps']
+      tags: ['Artificial Intelligence', 'DeepSeek', 'Machine Learning', 'Open Source']
     }
   ];
 

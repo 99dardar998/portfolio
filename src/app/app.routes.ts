@@ -52,7 +52,7 @@ export const routes: Routes = [
   {
     path: 'events/hackathon',
     loadComponent: () =>
-      import('./pages/events/hackaton/hackaton.component').then(m => m.HackathonComponent),
+      import('./pages/events/hackathon/hackathon.component').then(m => m.HackathonComponent),
     title: 'Hackathon – Arthur Holsbeke'
   },
   {

@@ -12,7 +12,7 @@
       @for (event of events(); track event.id) {
         <a [routerLink]="['/events', event.id]" class="event-card">
           <div class="event-card__header">
-            <div class="event-type-badge">{{ event.type === 'tech-meet' ? 'Tech & Meet' : 'Hackathon' }}</div>
+            <div class="event-type-badge">{{ event.type === 'tech-meet' ? 'Tech & Meet' : 'Hackaton' }}</div>
             <span class="event-date">{{ event.date }}</span>
           </div>
           <h2>{{ event.title }}</h2>
@@ -31,15 +31,13 @@
       <a routerLink="/events/hackathon" class="event-card event-card--special">
         <div class="event-card__header">
           <div class="event-type-badge event-type-badge--special">Hackathon</div>
-          <span class="event-date">2024</span>
+          <span class="event-date">2025</span>
         </div>
         <h2>Hackathon 2024</h2>
         <p class="event-location">📍 PXL University of Applied Sciences</p>
         <p class="event-desc">A 24-hour team hackathon where we designed, built, and presented a working prototype under real competition conditions.</p>
         <div class="event-tags">
           <app-tag-chip label="Team" />
-          <app-tag-chip label="Angular" />
-          <app-tag-chip label="Spring Boot" />
           <app-tag-chip label="24h Sprint" />
         </div>
         <span class="event-read-more">Read full write-up →</span>

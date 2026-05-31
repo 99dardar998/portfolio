@@ -1,0 +1,151 @@
+<div class="page-hero">
+  <div class="container">
+    <a routerLink="/events" class="back-link">← Back to Events</a>
+    <div class="event-meta-header">
+      <span class="event-type-badge">Hackathon</span>
+      <span class="event-date-badge">2024</span>
+    </div>
+    <h1>Hackathon</h1>
+    <p class="event-location">Howest, Campus Brugge Station - Gebouw A, Spoorwegstraat 4, 8200 Brugge</p>
+    <div class="event-tags">
+      @for (tech of technologies; track tech) {
+        <app-tag-chip [label]="tech" />
+      }
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  <div class="container container--narrow">
+
+    <div class="event-section">
+      <h2>Overview</h2>
+      <p>
+        For this hackathon, a friend and I decided to team up and participate in a DevOps-related challenge.
+        The main objective was not to develop a complex application but rather to learn how to deploy and
+        manage a website on a server. Using an SSH connection, we had to access a remote server and configure
+        it to host a website through Nginx. While the website itself needed some content, the actual focus of
+        the challenge was on hosting, server management, and the proper use of resources rather than on
+        software development.
+      </p>
+    </div>
+
+    <div class="event-section">
+      <h2>Team</h2>
+      <div class="team-grid">
+        @for (member of teamMembers; track member.name) {
+          <div class="team-card">
+            <div class="team-card__avatar">{{ member.name.charAt(0) }}</div>
+            <div class="team-card__info">
+              <span class="team-card__name">{{ member.name }}</span>
+              <span class="team-card__role">{{ member.role }}</span>
+            </div>
+          </div>
+        }
+      </div>
+      <p>
+        My teammate was not a software engineering student but a cybersecurity student. This made for an
+        interesting dynamic — we came at problems from different angles and had to help each other understand
+        unfamiliar concepts. Because we already had a strong friendship, we worked well together and managed
+        to keep the atmosphere relaxed and enjoyable, even when things did not go according to plan.
+      </p>
+    </div>
+
+    <div class="event-section">
+      <h2>The Challenge</h2>
+      <p>
+        The challenge required us to access a remote server via SSH and configure it to host a website using
+        Nginx. The emphasis was firmly on the operational side: server setup, resource management, and correct
+        configuration rather than building sophisticated software. From the very beginning, it became clear
+        that we were not the most experienced team for this particular challenge. Neither of us had much
+        practical experience with server administration or DevOps practices, so we often had to figure things
+        out as we went along, learning through trial and error.
+      </p>
+    </div>
+
+    <div class="event-section">
+      <h2>Technologies Used</h2>
+      <div class="tech-list">
+        @for (tech of technologies; track tech) {
+          <div class="tech-item">
+            <span class="tech-bullet">▸</span>
+            <span class="tech-name">{{ tech }}</span>
+          </div>
+        }
+      </div>
+    </div>
+
+    <div class="event-section">
+      <h2>Obstacles</h2>
+      <p>
+        Every step of the challenge presented something new to overcome. Configuring the server, understanding
+        how Nginx works, and troubleshooting SSH connection issues all required us to research and problem-solve
+        in real time. Neither of us had a strong background in this area, which meant every error message was
+        a learning opportunity rather than a familiar bump in the road.
+      </p>
+      <p>
+        The cross-discipline nature of our team also added an interesting layer. My cybersecurity teammate
+        approached problems differently than I did as a software engineering student, which sometimes meant
+        we talked past each other before finding a shared understanding. In the end, that difference turned
+        out to be more of a strength than a weakness.
+      </p>
+    </div>
+
+    <div class="event-section">
+      <h2>Lessons Learned</h2>
+      <p>
+        Despite the challenges, this turned out to be one of the most enjoyable aspects of the event. Every
+        problem we encountered became an opportunity to learn something new. The most valuable thing I gained
+        was not a particular technical skill but an introduction to the world of hackathons and the
+        collaborative environment they create.
+      </p>
+      <p>
+        Rather than focusing entirely on winning or mastering specific technologies, we spent time exploring
+        what a hackathon truly is. The experience gave me a much better understanding of how these events
+        work and left me looking forward to participating in similar events in the future.
+      </p>
+    </div>
+
+    <div class="event-section">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        @for (item of galleryItems; track item) {
+          <div class="gallery-placeholder">
+            <span class="gallery-icon">🖼️</span>
+            <span>{{ item }}</span>
+          </div>
+        }
+      </div>
+    </div>
+
+    <div class="event-section">
+      <h2>Results</h2>
+      <div class="results-card">
+        <div class="result-item">
+          <span class="result-label">Focus</span>
+          <span class="result-value">DevOps</span>
+        </div>
+        <div class="result-item">
+          <span class="result-label">Team Size</span>
+          <span class="result-value">2 Members</span>
+        </div>
+        <div class="result-item">
+          <span class="result-label">Server</span>
+          <span class="result-value">Nginx + SSH</span>
+        </div>
+        <div class="result-item">
+          <span class="result-label">Highlight</span>
+          <span class="result-value">Zoo Visit 🦁</span>
+        </div>
+      </div>
+      <p>
+        The hackathon offered more than just technical challenges. Various side activities were organized
+        for participants, including a visit to a zoo, which provided a welcome break and allowed everyone
+        to socialize beyond the competition itself. To close the day, all participants gathered to share
+        their experiences, successes, and challenges. Hearing about the different approaches taken by other
+        teams was both interesting and inspiring.
+      </p>
+    </div>
+
+  </div>
+</div>
