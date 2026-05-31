@@ -17,34 +17,34 @@ interface Milestone {
 export class LearningJourneyComponent {
   milestones: Milestone[] = [
     {
-      period: '2016–2021',
-      title: 'Early Curiosity',
-      description: 'First contact with HTML and CSS. Building simple webpages out of curiosity, no formal instruction. The beginning of an obsession with making things work through code.'
+      period: '2005',
+      title: 'Birth',
+      description: 'At this stage in life , i was just chilling.'
     },
     {
-      period: 'Sep 2022',
-      title: 'Starting at PXL',
-      description: 'Enrolled in Applied Computer Science at PXL University of Applied Sciences. First formal programming courses: Java fundamentals, database design, web development basics.'
+      period: '2015',
+      title: 'Tasting code',
+      description: 'An introvert was forced by his parents to join coder dojo where his cousin was an helper and found an passion.'
     },
     {
-      period: '2022–2023',
-      title: 'First Year – Building the Foundation',
-      description: 'Learned Java systematically, built first proper data structures, wrote first real algorithms. Discovered that understanding why things work matters more than memorizing how they work.'
+      period: '2017 - 2021',
+      title: 'Industrial siences',
+      description: 'I knew i wanted to learn how to program so i chose to learn this in secondary school but at most i was taught low code programs and basic arduino code.'
     },
     {
-      period: '2023–2024',
-      title: 'Second Year – Going Deeper',
-      description: 'Spring Boot, Angular, MongoDB, Docker, SQL databases. First fullstack projects. Participated in Tech & Meet series, started understanding what professional software development actually looks like.'
+      period: '2022 - 2024',
+      title: 'Elektronics and coding',
+      description: 'due to an lack of programming leading to an lack interest i failed most my classes and was forced to choose another path , luckily there was one where i would learn much more of what i wanted.'
     },
     {
-      period: '2024–2025',
-      title: 'Third Year – Putting It Together',
-      description: 'System design thinking, software architecture, CI/CD, meaningful project work. Building this e-portfolio. Preparing for internship. Connecting the dots between all the things learned.'
+      period: '2024- now',
+      title: 'Howest',
+      description: 'After taking an higher education very serious and visiting a lot of schools i chose for Howest to study TI at and have not regretted it since.'
     },
     {
       period: 'Next',
-      title: 'Internship & Beyond',
-      description: 'Entering a professional environment to apply, validate, and expand everything learned. The beginning of a career, not the end of learning.'
+      title: 'Work',
+      description: 'After spending the better part of 21 years in school i want to taste programming in an different setting and we will see where i end up in the future.'
     }
   ];
 }

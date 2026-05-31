@@ -44,16 +44,16 @@ export const routes: Routes = [
     title: 'Events – Arthur Holsbeke'
   },
   {
-    path: 'events/:id',
-    loadComponent: () =>
-      import('./pages/events/event-detail/event-detail.component').then(m => m.EventDetailComponent),
-    title: 'Event Detail – Arthur Holsbeke'
-  },
-  {
     path: 'events/hackathon',
     loadComponent: () =>
       import('./pages/events/hackathon/hackathon.component').then(m => m.HackathonComponent),
     title: 'Hackathon – Arthur Holsbeke'
+  },
+  {
+    path: 'events/:id',
+    loadComponent: () =>
+      import('./pages/events/event-detail/event-detail.component').then(m => m.EventDetailComponent),
+    title: 'Event Detail – Arthur Holsbeke'
   },
   {
     path: 'projects',

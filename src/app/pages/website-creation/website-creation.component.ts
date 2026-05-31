@@ -80,23 +80,5 @@ export class WebsiteCreationComponent {
         `SCSS scoping occasionally caused issues when global styles needed to coexist with component styles. The solution was disciplined: anything that appears in more than one component belongs in the global stylesheet; anything unique to one component belongs in that component's .scss file.`
       ]
     },
-    {
-      id: 'learned',
-      title: 'What I Learned',
-      content: [
-        `Building something real and public forces a different quality standard than academic projects. Knowing this site will be reviewed by actual engineers made me refactor things I might have left "good enough" in a coursework context. The navbar scroll behaviour, the mobile menu animation, the event detail routing pattern – all were iterated on more than they technically needed to be because I wanted them to be right.`,
-        `Angular Signals are genuinely excellent for component-level state. The mental model is simpler than RxJS for the class of problems this portfolio needed to solve, and the code is noticeably easier to read. I'll continue using them as the default for reactive state in Angular projects.`,
-        `CSS custom properties combined with SCSS are a powerful combination. Using custom properties for the design token layer means the values are available at runtime (useful for dynamic theming later), while SCSS handles the structural and compositional parts of the stylesheet.`
-      ]
-    },
-    {
-      id: 'future',
-      title: 'Future Improvements',
-      content: [
-        `A dark/light theme toggle is the most commonly requested feature in portfolio feedback. I deliberately deferred it to keep the scope manageable, but the CSS custom property architecture means adding it would be straightforward: a signal holding the current theme, a class toggle on the root element, and a second set of custom property values.`,
-        `I'd like to add filtering to the Projects page – filter by technology or status. The data model already supports it; it's a matter of adding signal-based filter state and a pipe or computed signal to filter the displayed list.`,
-        `Longer term, connecting the portfolio to a headless CMS would allow content updates without code changes. The structured data model (events, projects as typed interfaces) maps cleanly to CMS content types. This would be particularly useful as I accumulate more events and projects over the coming years.`
-      ]
-    }
   ];
 }
