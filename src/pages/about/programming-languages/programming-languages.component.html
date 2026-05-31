@@ -1,0 +1,32 @@
+<div class="page-hero">
+  <div class="container">
+    <a routerLink="/about" class="back-link">← Back to About</a>
+    <span class="page-label">About · Programming Languages</span>
+    <h1>Programming Languages</h1>
+    <p>An honest assessment of the languages I use and my proficiency in each.</p>
+  </div>
+</div>
+
+<div class="article-content">
+  <div class="container container--narrow">
+    <p class="lead">
+      Programming languages are tools. The best engineers aren't defined by how many they know, but by how deeply they understand the ones they use and how quickly they can pick up new ones. Here's where I stand.
+    </p>
+
+    <div class="lang-grid">
+      @for (lang of languages; track lang.name) {
+        <div class="lang-card">
+          <div class="lang-card__header">
+            <h2>{{ lang.name }}</h2>
+            <span class="level-badge level-badge--{{ lang.levelColor }}">{{ lang.level }}</span>
+          </div>
+          <p class="lang-card__description">{{ lang.description }}</p>
+          <div class="lang-card__use-case">
+            <span class="use-label">Use cases:</span>
+            <span>{{ lang.useCase }}</span>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

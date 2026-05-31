@@ -1,0 +1,99 @@
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="badge-dot"></span>
+        <span>Available for internship · 2025</span>
+      </div>
+
+      <h1 class="hero__name">Arthur<br><em>Holsbeke</em></h1>
+
+      <div class="hero__meta">
+        <span class="meta-study">Applied Computer Science</span>
+        <span class="meta-sep">–</span>
+        <span class="meta-spec">Software Engineering</span>
+        <span class="meta-year">· 3rd Year · PXL Hasselt</span>
+      </div>
+
+      <p class="hero__intro">
+        I build software that is clean, maintainable, and purposeful. Currently studying at PXL University of Applied Sciences,
+        I focus on fullstack web development – with Angular on the frontend and Spring Boot or .NET on the backend.
+        I care about code quality, system design, and building things that actually work.
+      </p>
+
+      <div class="hero__actions">
+        <a routerLink="/projects" class="btn btn--primary">View Projects</a>
+        <a routerLink="/contact" class="btn btn--ghost">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="avatar-container">
+        <div class="avatar-placeholder">
+          <span>AH</span>
+        </div>
+        <div class="avatar-ring ring-1"></div>
+        <div class="avatar-ring ring-2"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll-hint">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section class="skills-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Skills Overview</span>
+      <h2>What I Work With</h2>
+      <p>A snapshot of the technologies, languages, and tools that make up my current stack.</p>
+    </div>
+
+    <div class="skills-grid">
+      @for (category of skillCategories(); track category.label) {
+        <div class="skill-group">
+          <h3 class="skill-group__label">{{ category.label }}</h3>
+          <div class="skill-group__chips">
+            @for (skill of category.skills; track skill.name) {
+              <app-tag-chip [label]="skill.name" />
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="highlights-section">
+  <div class="container">
+    <div class="highlights-grid">
+      <a routerLink="/about" class="highlight-card">
+        <div class="highlight-icon">👤</div>
+        <h3>About Me</h3>
+        <p>Background, interests, and learning journey through software engineering.</p>
+        <span class="highlight-link">Explore →</span>
+      </a>
+      <a routerLink="/events" class="highlight-card">
+        <div class="highlight-icon">📍</div>
+        <h3>Events</h3>
+        <p>Tech & Meet sessions, hackathons, and industry networking experiences.</p>
+        <span class="highlight-link">Explore →</span>
+      </a>
+      <a routerLink="/projects" class="highlight-card">
+        <div class="highlight-icon">⚙️</div>
+        <h3>Projects</h3>
+        <p>A collection of projects built across different technologies and domains.</p>
+        <span class="highlight-link">Explore →</span>
+      </a>
+      <a routerLink="/contact" class="highlight-card">
+        <div class="highlight-icon">✉️</div>
+        <h3>Contact</h3>
+        <p>Reach out via email, GitHub, or LinkedIn for collaboration or opportunities.</p>
+        <span class="highlight-link">Explore →</span>
+      </a>
+    </div>
+  </div>
+</section>

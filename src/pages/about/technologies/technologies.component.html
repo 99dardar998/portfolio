@@ -1,0 +1,28 @@
+<div class="page-hero">
+  <div class="container">
+    <a routerLink="/about" class="back-link">← Back to About</a>
+    <span class="page-label">About · Technologies & Tools</span>
+    <h1>Technologies & Tools</h1>
+    <p>The frameworks, databases, and tools that power my development workflow.</p>
+  </div>
+</div>
+
+<div class="article-content">
+  <div class="container container--narrow">
+    <p class="lead">
+      Technology choices matter. Every framework and tool I list here is something I've used in real projects – not something I've watched a tutorial on. Here's my current stack and how I use it.
+    </p>
+
+    <div class="tech-grid">
+      @for (tech of technologies; track tech.name) {
+        <div class="tech-card">
+          <div class="tech-card__header">
+            <h2>{{ tech.name }}</h2>
+            <span class="tech-category">{{ tech.category }}</span>
+          </div>
+          <p>{{ tech.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="page-hero">
+  <div class="container">
+    <a routerLink="/about" class="back-link">← Back to About</a>
+    <span class="page-label">About · Learning Journey</span>
+    <h1>Learning Journey</h1>
+    <p>From first line of HTML to fullstack engineering student.</p>
+  </div>
+</div>
+
+<div class="article-content">
+  <div class="container container--narrow">
+    <p class="lead">
+      Learning to code is a non-linear process. Looking back, I can trace a clear arc – but living through it felt much messier than any timeline makes it look. This is an honest account of how I got here.
+    </p>
+
+    <div class="timeline">
+      @for (milestone of milestones; track milestone.period; let last = $last) {
+        <div class="timeline__item" [class.last]="last">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <span class="timeline__period">{{ milestone.period }}</span>
+            <h2>{{ milestone.title }}</h2>
+            <p>{{ milestone.description }}</p>
+          </div>
+        </div>
+      }
+    </div>
+
+    <div class="article-body" style="margin-top: 3rem;">
+      <h2>Reflections</h2>
+      <p>
+        The biggest lesson of my learning journey isn't technical. It's the understanding that the feeling of not knowing enough never entirely goes away – and that's not a problem to solve, it's a feature of the field. Every engineer I've spoken with has confirmed this: the best ones are perpetually learning, perpetually encountering the edge of what they know, and perpetually curious about what's beyond it.
+      </p>
+      <p>
+        I've made peace with that. More than peace – I find it motivating. There is always something interesting to learn, always a better way to do something, always a perspective I haven't considered. Software engineering is the right career for someone who is fundamentally curious and fundamentally uncomfortable standing still.
+      </p>
+      <p>
+        What I'm most proud of from my three years of study isn't any specific project or grade. It's the shift in how I think about problems. I approach things differently now – more structurally, more skeptically, and with more appreciation for the complexity that lies beneath simple-looking surfaces. That, I think, is what education is actually for.
+      </p>
+    </div>
+  </div>
+</div>

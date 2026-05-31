@@ -1,0 +1,77 @@
+@if (event(); as ev) {
+  <div class="page-hero">
+    <div class="container">
+      <a routerLink="/events" class="back-link">← Back to Events</a>
+      <div class="event-meta-header">
+        <span class="event-type-badge">{{ ev.type === 'tech-meet' ? 'Tech & Meet' : ev.type }}</span>
+        <span class="event-date-badge">{{ ev.date }}</span>
+      </div>
+      <h1>{{ ev.title }}</h1>
+      <p class="event-location">📍 {{ ev.location }}</p>
+      <div class="event-tags">
+        @for (tag of ev.tags; track tag) {
+          <app-tag-chip [label]="tag" />
+        }
+      </div>
+    </div>
+  </div>
+
+  <div class="article-content">
+    <div class="container container--narrow">
+
+      <div class="event-section">
+        <h2>Overview</h2>
+        <p>{{ ev.overview }}</p>
+      </div>
+
+      <div class="event-section">
+        <h2>What Happened</h2>
+        <p>{{ ev.whatHappened }}</p>
+      </div>
+
+      <div class="event-section">
+        <h2>What I Learned</h2>
+        <p>{{ ev.whatILearned }}</p>
+      </div>
+
+      <div class="event-section">
+        <h2>Reflection</h2>
+        <p>{{ ev.reflection }}</p>
+      </div>
+
+      <div class="event-section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          @for (item of ev.gallery; track item.alt) {
+            <div class="gallery-item">
+              <div class="gallery-placeholder">
+                <span class="gallery-icon">🖼️</span>
+                <span>{{ item.placeholder }}</span>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+
+      <div class="event-section takeaways-section">
+        <h2>Key Takeaways</h2>
+        <ul class="takeaways-list">
+          @for (takeaway of ev.keyTakeaways; track takeaway) {
+            <li>
+              <span class="takeaway-bullet">→</span>
+              <span>{{ takeaway }}</span>
+            </li>
+          }
+        </ul>
+      </div>
+
+    </div>
+  </div>
+} @else {
+  <div class="not-found">
+    <div class="container">
+      <h1>Event not found</h1>
+      <a routerLink="/events" class="btn btn--primary">Back to Events</a>
+    </div>
+  </div>
+}

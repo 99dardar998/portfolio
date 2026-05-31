@@ -1,0 +1,24 @@
+<div class="page-hero">
+  <div class="container">
+    <span class="page-label">About</span>
+    <h1>Get to Know Me</h1>
+    <p>Four articles covering who I am, what I know, and where I'm going as a software engineering student.</p>
+  </div>
+</div>
+
+<section class="articles-section">
+  <div class="container">
+    <div class="articles-grid">
+      @for (article of articles; track article.route) {
+        <a [routerLink]="article.route" class="article-card">
+          <div class="article-card__icon">{{ article.icon }}</div>
+          <div class="article-card__body">
+            <h2>{{ article.title }}</h2>
+            <p>{{ article.description }}</p>
+          </div>
+          <div class="article-card__arrow">→</div>
+        </a>
+      }
+    </div>
+  </div>
+</section>
