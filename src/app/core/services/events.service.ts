@@ -32,7 +32,7 @@ That being said, this first seminar served as an excellent introduction to the T
         { alt: 'Threat intelligence presentation', placeholder: 'Seminar overview slide' },
       ],
       tags: ['Cybersecurity', 'Threat Intelligence', 'Security', 'Networking'],
-      image: '/images/tam1.webp'
+      image: 'portfolio/images/tam1.webp'
     },
     {
       id: 'tech-meet-2',
@@ -64,7 +64,7 @@ I am not ashamed to admit that the technique of mixing fun facts with technical 
         { alt: 'IPv6 address space diagram', placeholder: 'Network diagram slide' },
       ],
       tags: ['IPv6', 'Networking', 'Internet Infrastructure', 'Protocols'],
-      image: '/images/tam2.webp'
+      image: 'portfolio/images/tam2.webp'
     },
     {
       id: 'tech-meet-3',
@@ -94,7 +94,7 @@ Even though C# was not my main focus language, attending this seminar reinforced
         { alt: 'C# language features overview', placeholder: 'C# feature slide' },
       ],
       tags: ['C#', '.NET', 'Programming Languages', 'Software Engineering'],
-      image: '/images/tam3.webp'
+      image: 'portfolio/images/tam3.webp'
     },
     {
       id: 'tech-meet-4',
@@ -126,7 +126,7 @@ Combined with my personal interest in artificial intelligence, this made the sem
         { alt: 'DeepSeek model overview', placeholder: 'src/resources/tam4.webp' },
       ],
       tags: ['Artificial Intelligence', 'DeepSeek', 'Machine Learning', 'Open Source'],
-      image: '/images/tam4.webp'
+      image: 'portfolio/images/tam4.webp'
     }
   ];
 
