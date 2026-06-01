@@ -22,4 +22,5 @@ export interface Event {
   keyTakeaways: string[];
   gallery: GalleryItem[];
   tags: string[];
+  image: string;
 }

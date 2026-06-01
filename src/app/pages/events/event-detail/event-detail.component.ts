@@ -23,4 +23,5 @@ export class EventDetailComponent implements OnInit {
       this.event.set(this.eventsService.getEventById(id));
     }
   }
+
 }

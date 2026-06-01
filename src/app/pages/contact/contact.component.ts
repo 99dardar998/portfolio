@@ -27,17 +27,17 @@ export class ContactComponent {
   contactLinks: ContactLink[] = [
     {
       label: 'Email',
-      value: 'arthur.holsbeke@student.pxl.be',
-      href: 'mailto:arthur.holsbeke@student.pxl.be',
+      value: 'holsbekearthur@gmail.com',
+      href: 'holsbekearthur@gmail.com',
       icon: '✉️',
-      description: 'Best for detailed enquiries or internship opportunities.'
+      description: 'Do not mail me pls , i dont read my mails.'
     },
     {
-      label: 'GitHub',
-      value: 'github.com/artholsbeke',
-      href: 'https://github.com/artholsbeke',
+      label: 'Podcast',
+      value: 'The podcast',
+      href: 'https://open.spotify.com/episode/3NoBiIgbIyD2YaNuTTqQOB',
       icon: '⌥',
-      description: 'Browse my public repositories and open source contributions.'
+      description: 'this is an podcast me an cousin of mine and my friend made.'
     },
     {
       label: 'LinkedIn',

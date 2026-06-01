@@ -9,10 +9,14 @@
 <section class="events-section">
   <div class="container">
     <div class="events-grid">
+
       @for (event of events(); track event.id) {
         <a [routerLink]="['/events', event.id]" class="event-card">
+          <div class="event-card__image">
+            <img [src]="event.image" [alt]="event.title" />
+          </div>
           <div class="event-card__header">
-            <div class="event-type-badge">{{ event.type === 'tech-meet' ? 'Tech & Meet' : 'Hackaton' }}</div>
+            <div class="event-type-badge">Tech & Meet</div>
             <span class="event-date">{{ event.date }}</span>
           </div>
           <h2>{{ event.title }}</h2>
@@ -29,19 +33,24 @@
 
       <!-- Hackathon card -->
       <a routerLink="/events/hackathon" class="event-card event-card--special">
+        <div class="event-card__image">
+          <img src="/images/hackathon.jpg" alt="Hackathon" />
+        </div>
         <div class="event-card__header">
           <div class="event-type-badge event-type-badge--special">Hackathon</div>
           <span class="event-date">2025</span>
         </div>
-        <h2>Hackathon 2024</h2>
-        <p class="event-location">Howest, Campus Brugge Station - Gebouw A, Spoorwegstraat 4, 8200 Brugge</p>
-        <p class="event-desc">A 24-hour team hackathon where we designed, built, and presented a working prototype under real competition conditions.</p>
+        <h2>Hackathon 2025</h2>
+        <p class="event-location">📍 Howest, Campus Brugge Station, Spoorwegstraat 4, 8200 Brugge</p>
+        <p class="event-desc">A DevOps challenge where we configured and hosted a website on a remote server using SSH and Nginx.</p>
         <div class="event-tags">
-          <app-tag-chip label="Team" />
-          <app-tag-chip label="24h Sprint" />
+          <app-tag-chip label="DevOps" />
+          <app-tag-chip label="SSH" />
+          <app-tag-chip label="Nginx" />
         </div>
         <span class="event-read-more">Read full write-up →</span>
       </a>
+
     </div>
   </div>
 </section>

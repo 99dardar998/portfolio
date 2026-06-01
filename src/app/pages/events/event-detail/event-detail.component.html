@@ -2,6 +2,11 @@
   <div class="page-hero">
     <div class="container">
       <a routerLink="/events" class="back-link">← Back to Events</a>
+
+      <div class="hero-image">
+        <img [src]="ev.image" [alt]="ev.title" />
+      </div>
+
       <div class="event-meta-header">
         <span class="event-type-badge">{{ ev.type === 'tech-meet' ? 'Tech & Meet' : ev.type }}</span>
         <span class="event-date-badge">{{ ev.date }}</span>
@@ -39,20 +44,6 @@
         <p>{{ ev.reflection }}</p>
       </div>
 
-      <div class="event-section">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-          @for (item of ev.gallery; track item.alt) {
-            <div class="gallery-item">
-              <div class="gallery-placeholder">
-                <span class="gallery-icon">🖼️</span>
-                <span>{{ item.placeholder }}</span>
-              </div>
-            </div>
-          }
-        </div>
-      </div>
-
       <div class="event-section takeaways-section">
         <h2>Key Takeaways</h2>
         <ul class="takeaways-list">
@@ -67,6 +58,7 @@
 
     </div>
   </div>
+
 } @else {
   <div class="not-found">
     <div class="container">

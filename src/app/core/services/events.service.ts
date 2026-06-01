@@ -30,10 +30,9 @@ That being said, this first seminar served as an excellent introduction to the T
       ],
       gallery: [
         { alt: 'Threat intelligence presentation', placeholder: 'Seminar overview slide' },
-        { alt: 'Cybersecurity concepts', placeholder: 'Attack vector diagram' },
-        { alt: 'Evening seminar setting', placeholder: 'Lecture hall' }
       ],
-      tags: ['Cybersecurity', 'Threat Intelligence', 'Security', 'Networking']
+      tags: ['Cybersecurity', 'Threat Intelligence', 'Security', 'Networking'],
+      image: '/images/tam1.webp'
     },
     {
       id: 'tech-meet-2',
@@ -63,10 +62,9 @@ I am not ashamed to admit that the technique of mixing fun facts with technical 
       ],
       gallery: [
         { alt: 'IPv6 address space diagram', placeholder: 'Network diagram slide' },
-        { alt: 'IPv4 vs IPv6 comparison', placeholder: 'Protocol comparison' },
-        { alt: 'Seminar audience', placeholder: 'Evening seminar' }
       ],
-      tags: ['IPv6', 'Networking', 'Internet Infrastructure', 'Protocols']
+      tags: ['IPv6', 'Networking', 'Internet Infrastructure', 'Protocols'],
+      image: '/images/tam2.webp'
     },
     {
       id: 'tech-meet-3',
@@ -94,10 +92,9 @@ Even though C# was not my main focus language, attending this seminar reinforced
       ],
       gallery: [
         { alt: 'C# language features overview', placeholder: 'C# feature slide' },
-        { alt: '.NET ecosystem diagram', placeholder: '.NET overview' },
-        { alt: 'Speaker presentation', placeholder: 'Seminar session' }
       ],
-      tags: ['C#', '.NET', 'Programming Languages', 'Software Engineering']
+      tags: ['C#', '.NET', 'Programming Languages', 'Software Engineering'],
+      image: '/images/tam3.webp'
     },
     {
       id: 'tech-meet-4',
@@ -126,11 +123,10 @@ Combined with my personal interest in artificial intelligence, this made the sem
         'AI is rapidly evolving — staying informed is essential for every software developer'
       ],
       gallery: [
-        { alt: 'DeepSeek model overview', placeholder: 'AI model comparison slide' },
-        { alt: 'Dimi Casier presenting', placeholder: 'Seminar presentation' },
-        { alt: 'AI landscape discussion', placeholder: 'Industry overview' }
+        { alt: 'DeepSeek model overview', placeholder: 'src/resources/tam4.webp' },
       ],
-      tags: ['Artificial Intelligence', 'DeepSeek', 'Machine Learning', 'Open Source']
+      tags: ['Artificial Intelligence', 'DeepSeek', 'Machine Learning', 'Open Source'],
+      image: '/images/tam4.webp'
     }
   ];
 

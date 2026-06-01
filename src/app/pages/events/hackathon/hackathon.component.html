@@ -1,4 +1,9 @@
 <div class="page-hero">
+  <div class="hackathon-image">
+  <div class="container container--narrow">
+    <img src="/images/hackathon.jpg" alt="Hackathon" />
+  </div>
+</div>
   <div class="container">
     <a routerLink="/events" class="back-link">← Back to Events</a>
     <div class="event-meta-header">
@@ -6,7 +11,7 @@
       <span class="event-date-badge">2024</span>
     </div>
     <h1>Hackathon</h1>
-    <p class="event-location">Howest, Campus Brugge Station - Gebouw A, Spoorwegstraat 4, 8200 Brugge</p>
+    <p class="event-location">Zoo, Antwerp</p>
     <div class="event-tags">
       @for (tech of technologies; track tech) {
         <app-tag-chip [label]="tech" />
