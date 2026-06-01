@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Arthur Holsbeke – Software Engineering Portfolio</title>
-  <base href="/">
+  <base href="/portfolio/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="E-portfolio of Arthur Holsbeke, 3rd year Applied Computer Science – Software Engineering student.">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -11,16 +11,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
   <script>
-  (function() {
-    var p = window.location.search.match(/p=([^&]*)/);
-    if (p) {
-      window.history.replaceState(
-        null, null,
-        window.location.pathname + decodeURIComponent(p[1])
-      );
-    }
-  })();
-</script>
+    (function() {
+      var p = window.location.search.match(/p=([^&]*)/);
+      if (p) {
+        window.history.replaceState(
+          null, null,
+          '/' + decodeURIComponent(p[1]) + (
+            window.location.search.match(/q=([^&]*)/)
+              ? '?' + decodeURIComponent(window.location.search.match(/q=([^&]*)/)[1])
+              : ''
+          )
+        );
+      }
+    })();
+  </script>
 </head>
 <body>
   <app-root></app-root>

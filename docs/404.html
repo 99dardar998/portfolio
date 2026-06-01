@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <title>Arthur Holsbeke</title>
     <script>
-      var path = window.location.pathname.replace('/portfolio', '');
-      window.location.replace(
-        window.location.origin + '/portfolio/?p=' + encodeURIComponent(path)
+      var segmentCount = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=' +
+        encodeURIComponent(l.pathname.slice(1) + (l.search ? '&q=' + l.search.slice(1) : '') + l.hash)
       );
     </script>
   </head>
